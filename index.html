@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0 ,shrink-to-fit=no" />
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css" integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2" crossorigin="anonymous">  
+  
+  <link rel="stylesheet" href="public/css/homepageStyle.css">  
+
+  <script src="https://code.jquery.com/jquery-3.5.1.min.js"
+  integrity="sha256-9/aliU8dGd2tb6OSsuzixeV4y/faTqgFtohetphbbj0=" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"
+    integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous">
+  </script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"
+    integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous">
+  </script>
+  <title>Sample Page |</title>
+</head>
+
+<body>
+  <!-- HEADER-->
+  <nav class="navbar sticky-top navbar-expand-lg navbar-dark bg-dark">
+    <a class="navbar-brand" href="#">Logo</a><button class="navbar-toggler" type="button" data-toggle="collapse"
+      data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+      aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav mr-auto">
+        <li class="nav-item active">
+          <a class="nav-link" href="/">Home <span class="sr-only">(current)</span></a>
+        </li>
+        <li class="nav-item"><a class="nav-link" href="#">Link</a></li>
+        <li class="nav-item">
+          <a class="nav-link" href="/sign_up">Sign Up</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="/log_in">Log In </a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="/log_out">Log Out </a>
+        </li>
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" id="navbarDropdown" href="#" role="button" data-toggle="dropdown"
+            aria-haspopup="true" aria-expanded="false">Dropdown</a>
+          <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+            <a class="dropdown-item" href="#">Action</a><a class="dropdown-item" href="#">Another action</a>
+            <div class="dropdown-divider"></div>
+            <a class="dropdown-item" href="#">Something else here</a>
+          </div>
+        </li>
+      </ul>
+      <form class="form-inline my-2 my-lg-0">
+        <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search" /><button
+          class="btn btn-outline-success my-2 my-sm-0" type="submit">
+          Search
+        </button>
+      </form>
+    </div>
+  </nav>
+  <!-- CONTEN-->
+  <main class="container-fluid h-100 flex-column base_container">
+    <div class="container">
+      <div class="row justify-content-center">
+        <div class="col-xl-8 col-lg-9 col-md-10">
+
+
+            <!-- Form-->
+          <form class="needs-validation" novalidate>
+
+
+            <div class="form-row">
+
+              <div class="col-md-6 mb-3">
+                <label for="validationServer01">First name</label>
+                <input type="text" class="form-control nameFields1" id="validationServer01" value="" required
+                  autocomplete="firstname" />
+                <div class="invalid-feedback">Please fill this field</div>
+              </div>
+
+              <div class="col-md-6 mb-3">
+                <label for="validationServer02">Last name</label>
+                <input type="text" class="form-control nameFields2" id="validationServer02" value="" required
+                  autocomplete="lastname" />
+                <div class="invalid-feedback">Please fill this field</div>
+              </div>
+            </div>
+
+            <div class="form-group">
+              <label for="emailInput">Email address</label>
+              <input type="email" class="form-control" id="emailInput" aria-describedby="emailHelp" required
+                autocomplete="email" />
+              <div class="invalid-feedback" id="email_invalid_message">
+                Please fill this field
+              </div>
+            </div>
+
+            <div class="form-group">
+              <label for="inputPassword">Password</label>
+              <input type="password" id="inputPassword" class="form-control passwordFields"
+                aria-describedby="passwordHelpBlock" placeholder="type password" required autocomplete="password" />
+              <div class="invalid-feedback password-invalid-feedback" id="invalid-password-input">
+                Please fill this field
+              </div>
+              <small id="passwordHelpBlock" class="form-text text-muted">
+                <Your>password must be longer than 5 characters and contain at least 1 digit </Your>
+              </small>
+            </div>
+
+            <div class="form-group">
+              <label for="confirmInputPassword">Confirm Password</label>
+              <input type="password" class="form-control passwordFields" id="confirmInputPassword"
+                placeholder="type password again" required autocomplete="password" />
+              <div class="invalid-feedback invalid-confirm-password password-invalid-feedback">
+                Please fill this field
+              </div>
+            </div>
+
+            <div class="alert alert-warning password_dont_match" role="alert" style="display: none">
+              <strong>Two passwords don't match. Please check</strong>
+            </div>
+
+            <div class="alert alert-success signup_form_ok" role="alert" style="display: none">
+              <strong>You have entered all fields correctly</strong>
+            </div>
+            <button class="btn btn-primary" type="submit">Submit form</button>
+            
+          </form>
+
+        </div>
+      </div>
+    </div>
+  </main>
+  <!-- FOOTER-->
+  <footer class="footer">
+    <div class="container">
+      <p>sticky footer</p>
+    </div>
+  </footer>
+  <script src="public/js/alerts.js"></script>
+  <script src="public/js/checkSignupForm.js"></script>
+
+
+</body>
+
+</html>
